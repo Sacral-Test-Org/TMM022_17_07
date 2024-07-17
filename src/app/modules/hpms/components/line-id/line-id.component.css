@@ -1,0 +1,88 @@
+/* src/app/modules/hpms/components/line-id/line-id.component.css */
+
+/* General styles for the Line ID component */
+.line-id-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 16px 0;
+}
+
+.line-id-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.line-id-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-id-form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.line-id-form-group label {
+  flex: 1;
+  font-weight: bold;
+  color: #555;
+}
+
+.line-id-form-group input {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.line-id-form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.line-id-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.line-id-buttons button {
+  padding: 8px 16px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.line-id-buttons button.save {
+  background-color: #28a745;
+  color: white;
+}
+
+.line-id-buttons button.clear {
+  background-color: #ffc107;
+  color: white;
+}
+
+.line-id-buttons button.edit {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.line-id-buttons button.exit {
+  background-color: #dc3545;
+  color: white;
+}
+
+.line-id-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

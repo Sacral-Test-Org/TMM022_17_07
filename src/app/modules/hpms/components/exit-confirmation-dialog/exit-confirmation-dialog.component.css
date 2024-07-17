@@ -1,0 +1,58 @@
+/* src/app/modules/hpms/components/exit-confirmation-dialog/exit-confirmation-dialog.component.css */
+
+/* Container for the confirmation dialog */
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the confirmation message */
+.dialog-message {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container for the buttons */
+.dialog-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Style for the individual buttons */
+.dialog-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for the "Yes" button */
+.dialog-button-yes {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.dialog-button-yes:hover {
+  background-color: #c9302c;
+}
+
+/* Style for the "No" button */
+.dialog-button-no {
+  background-color: #5bc0de;
+  color: #fff;
+}
+
+.dialog-button-no:hover {
+  background-color: #31b0d5;
+}

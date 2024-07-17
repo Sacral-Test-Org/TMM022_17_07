@@ -1,0 +1,78 @@
+<div class="line-id-container">
+  <form [formGroup]="lineIdForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="unitId">Unit ID</label>
+      <input type="text" id="unitId" formControlName="unitId" (blur)="validateUnitId()" />
+      <div *ngIf="unitId.invalid && (unitId.dirty || unitId.touched)" class="error">
+        <div *ngIf="unitId.errors?.required">Unit ID is required.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="unitName">Unit Name</label>
+      <input type="text" id="unitName" formControlName="unitName" (blur)="validateUnitName()" />
+      <div *ngIf="unitName.invalid && (unitName.dirty || unitName.touched)" class="error">
+        <div *ngIf="unitName.errors?.required">Unit Name is required.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="groupId">Group ID</label>
+      <input type="text" id="groupId" formControlName="groupId" (blur)="validateGroupId()" />
+      <div *ngIf="groupId.invalid && (groupId.dirty || groupId.touched)" class="error">
+        <div *ngIf="groupId.errors?.required">Group ID is required.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="groupName">Group Name</label>
+      <input type="text" id="groupName" formControlName="groupName" (blur)="validateGroupName()" />
+      <div *ngIf="groupName.invalid && (groupName.dirty || groupName.touched)" class="error">
+        <div *ngIf="groupName.errors?.required">Group Name is required.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lineId">Line ID</label>
+      <input type="text" id="lineId" formControlName="lineId" (dblclick)="onLineIdDblClick()" (click)="onLineIdClick()" (blur)="validateLineId()" />
+      <div *ngIf="lineId.invalid && (lineId.dirty || lineId.touched)" class="error">
+        <div *ngIf="lineId.errors?.required">Line ID is required.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lineDesc">Line Description</label>
+      <input type="text" id="lineDesc" formControlName="lineDesc" (blur)="validateLineDesc()" />
+      <div *ngIf="lineDesc.invalid && (lineDesc.dirty || lineDesc.touched)" class="error">
+        <div *ngIf="lineDesc.errors?.required">Line Description is required.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="partId">Part ID</label>
+      <input type="text" id="partId" formControlName="partId" />
+    </div>
+
+    <div class="form-group">
+      <label for="partNo">Part Number</label>
+      <input type="text" id="partNo" formControlName="partNo" />
+    </div>
+
+    <div class="form-group">
+      <label for="partDesc">Part Description</label>
+      <input type="text" id="partDesc" formControlName="partDesc" />
+    </div>
+
+    <div class="form-group">
+      <label for="partStatus">Part Status</label>
+      <input type="text" id="partStatus" formControlName="partStatus" />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" [disabled]="!lineIdForm.valid">Save</button>
+      <button type="button" (click)="clearForm()">Clear</button>
+      <button type="button" (click)="editForm()">Edit</button>
+      <button type="button" (click)="exitForm()">Exit</button>
+    </div>
+  </form>
+</div>

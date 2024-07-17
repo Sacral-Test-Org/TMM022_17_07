@@ -1,0 +1,99 @@
+/* src/app/modules/hpms/components/part-master/part-master.component.css */
+
+/* Style the main window to be maximized */
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Style the 'PART_MASTER' window to be normal size */
+.part-master-window {
+  width: 609px;
+  height: 300px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style the 'SCREENNAME' and 'SYSDATE' fields */
+.screenname-field,
+.sysdate-field {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Style the 'SAVE' button to be disabled */
+.save-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style the 'GROUP_ID', 'PARTNO', 'PART_STATUS', 'PART_DESC', and 'LINE_ID' fields to be enabled */
+.group-id-field,
+.partno-field,
+.part-status-field,
+.part-desc-field,
+.line-id-field {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Style the 'UNIT_ID' field to be enabled if it is currently disabled */
+.unit-id-field {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Ensure the cursor is placed in the 'UNIT_ID' field upon form initialization */
+.unit-id-field:focus {
+  outline: 2px solid #007bff;
+}
+
+/* Update styles for the buttons in the PART_MASTER component */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Update styles for the 'Edit' button if necessary */
+.edit-button {
+  background-color: #28a745;
+}
+
+.edit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Update styles for the 'Exit' button if necessary */
+.exit-button {
+  background-color: #dc3545;
+}
+
+.exit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
